@@ -6,7 +6,11 @@ video = cv2.VideoCapture(0)
 
 #print(video.read())
 
+a = 1
+
 while True:
+    a = a + 1
+
     check, frame = video.read()
 
     #print(check)
@@ -21,5 +25,6 @@ while True:
     if key == ord('q'):
         break
 
+print(a)
 video.release()
 cv2.destroyAllWindows()
